@@ -1,17 +1,12 @@
-"""Basic arithmetic operations."""
+"""Basic math utilities."""
 
 from typing import Union
 
-Number = Union[int, float]
-
-def sum_numbers(a: Number, b: Number) -> Number:
-    """Return the sum of *a* and *b*.
-
-    Args:
-        a (Number): First addend.
-        b (Number): Second addend.
-
-    Returns:
-        Number: The arithmetic sum of the two numbers.
-    """
+def soma(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+    """Return the sum of *a* and *b*."""
     return a + b
+
+
+if __name__ == "__main__":
+    # Quick manual test
+    print(soma(2, 3))
