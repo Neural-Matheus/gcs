@@ -1,10 +1,9 @@
-"""Unit tests for arithmetic operations."""
+"""Unit tests for app.soma()."""
 
-import pytest
-
-from app import sum_numbers
+from app import soma
 
 
-def test_sum_numbers() -> None:
-    """Check if the sum of 2 and 3 equals 5."""
-    assert sum_numbers(2, 3) == 5
+def test_soma():
+    assert soma(2, 3) == 5
+    assert soma(-1, 1) == 0
+    assert soma(0, 0) == 0
